@@ -1,0 +1,126 @@
+﻿body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('https://i.ibb.co/cSSDKWDn/Chat-GPT-Image-14-2025-10-25-57.png') no-repeat center center/cover;
+  color: #fff;
+  direction: rtl;
+}
+
+/* ====== الهيدر ====== */
+.header {
+  text-align: center;
+  padding: 20px;
+}
+
+.logo {
+  display: inline-block;
+  background-color: white;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.logo img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 22px;
+  margin-top: 10px;
+  line-height: 1.4;
+}
+
+.slogan {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 15px;
+  color: #ffeb3b;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+/* ====== التعريف ====== */
+.about {
+  text-align: center;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.static-text {
+  font-weight: bold;
+  font-size: 18px;
+  color: #fff;
+}
+
+/* ====== المنتجات ====== */
+.products {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.product-item {
+  width: 180px;
+  text-align: center;
+  background: rgba(0,0,0,0.4);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.product-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.product-item p {
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* ====== واتساب ====== */
+.whatsapp {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.whatsapp a {
+  background-color: #25D366;
+  color: #fff;
+  padding: 15px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.whatsapp img {
+  width: 20px;
+  height: 20px;
+}
+
+/* ====== حركة Floating + Fade ====== */
+@keyframes floatingFade {
+  0% { transform: translateY(0px); opacity: 1; }
+  25% { transform: translateY(-10px); opacity: 0.7; }
+  50% { transform: translateY(-20px); opacity: 1; }
+  75% { transform: translateY(-10px); opacity: 0.7; }
+  100% { transform: translateY(0px); opacity: 1; }
+}
+
+.floating-fade {
+  animation: floatingFade 4s ease-in-out infinite;
+}
