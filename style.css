@@ -1,4 +1,5 @@
-﻿body {
+﻿/* ====== style.css ====== */
+body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -64,16 +65,18 @@
 .product-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 15px;
   justify-content: center;
 }
 
 .product-item {
-  width: 180px;
+  flex: 1 1 calc(50% - 15px); /* صفين في الموبايل */
+  max-width: 180px;
   text-align: center;
   background: rgba(0,0,0,0.4);
   padding: 10px;
   border-radius: 10px;
+  box-sizing: border-box;
 }
 
 .product-item img {
@@ -87,6 +90,13 @@
   font-size: 16px;
   font-weight: bold;
   color: #fff;
+}
+
+/* ====== صفحات أكبر ====== */
+@media screen and (min-width: 600px) {
+  .product-item {
+    flex: 1 1 calc(33.33% - 15px); /* 3 منتجات في الصف */
+  }
 }
 
 /* ====== واتساب ====== */
